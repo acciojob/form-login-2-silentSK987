@@ -7,10 +7,10 @@ let data=[];
 const onSubmitForm = (event)=>{
     event.preventDefault(); 
     const empdata={
-        firstName: event.target.firstname.value,
-        lastName: event.target.lastname.value,
-        phoneNumber: event.target.phone.value,
-        email: event.target.email.value,
+        firstName:document.getElementById("name").value,
+        lastName: document.getElementById("lastname").value,
+        phoneNumber:document.getElementById("phonenum").value,
+        email:document.getElementById("email").value,
         
     }
     let fname=`First Name: ${empdata.firstName}
